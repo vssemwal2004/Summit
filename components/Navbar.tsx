@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import { brand, nav } from "@/lib/content";
+import { asset } from "@/lib/asset";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -34,7 +35,7 @@ export default function Navbar() {
     >
       <div className="mx-auto flex h-full max-w-[1440px] items-center justify-between px-5 md:px-10 lg:px-16">
         <a href="#top" className="flex min-h-12 items-center gap-3 text-ivory" aria-label={`${brand.name} ${brand.by} — back to top`}>
-          <Image src="/brand/summit-emblem-transparent.png" alt="" width={390} height={197} priority className="h-7 w-auto md:h-8" />
+          <Image src={asset("/brand/summit-emblem-transparent.png")} alt="" width={390} height={197} priority className="h-7 w-auto md:h-8" />
           <span className="font-serif text-lg tracking-[0.3em] md:text-xl">THE SUMMIT</span>
         </a>
 
@@ -82,7 +83,7 @@ export default function Navbar() {
         <div className="flex h-full flex-col px-5 pt-6 pb-10">
           <div className="flex items-center justify-between">
             <span className="flex items-center gap-3">
-              <Image src="/brand/summit-emblem-transparent.png" alt="" width={390} height={197} className="h-7 w-auto" />
+              <Image src={asset("/brand/summit-emblem-transparent.png")} alt="" width={390} height={197} className="h-7 w-auto" />
               <span className="font-serif text-lg tracking-[0.3em]">THE SUMMIT</span>
             </span>
             <button type="button" onClick={close} className="inline-flex size-12 items-center justify-center" aria-label="Close menu">

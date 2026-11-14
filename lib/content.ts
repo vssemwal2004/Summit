@@ -4,6 +4,8 @@
  * with verified information before going live.
  */
 
+import { asset } from "./asset";
+
 export const brand = {
   name: "The Summit",
   by: "By Vinayak Realty",
@@ -54,7 +56,7 @@ export const location = {
 export type Credit = { author: string; licence: string; url: string };
 export type Photo = { src?: string; alt: string; label?: string; credit?: Credit };
 
-const P = "/images/photos/";
+const P = asset("/images/photos/");
 const commons = (file: string) => `https://commons.wikimedia.org/wiki/File:${file}`;
 
 export const credits = {
@@ -120,7 +122,7 @@ export const amenities = [
  */
 export type LegacyProject = { name: string; category: "Residential" | "Commercial"; image?: string };
 
-const L = "/images/legacy/";
+const L = asset("/images/legacy/");
 export const legacy: LegacyProject[] = [
   { name: "Vinayak Aashirwad", category: "Commercial", image: `${L}vinayak-aashirwad.jpg` },
   { name: "Shree Krishna Nilayam", category: "Residential", image: `${L}shree-krishna-nilayam.jpg` },

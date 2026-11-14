@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 
 type Props = { size?: "sm" | "lg"; className?: string };
 
@@ -12,7 +13,7 @@ export default function Logo({ size = "lg", className = "" }: Props) {
   return (
     <div role="img" aria-label="The Summit by Vinayak Realty" className={`inline-flex flex-col items-center ${className}`}>
       <Image
-        src="/brand/summit-emblem-transparent.png"
+        src={asset("/brand/summit-emblem-transparent.png")}
         alt=""
         width={390}
         height={197}
