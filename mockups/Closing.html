@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Summit — Closing and Enquiry</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#C6A667}a:hover{color:#E5D2A0}
+</style>
+</helmet>
+<div style="width: 1440px; height: 900px; background: #08090B; color: #F5F2EA; font-family: Manrope, sans-serif; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; box-sizing: border-box; padding: 0 64px; position: relative; overflow: hidden;">
+  <svg aria-hidden="true" width="1440" height="900" viewBox="0 0 1440 900" style="position: absolute; inset: 0;">
+    <defs><radialGradient id="ng" cx="28%" cy="60%" r="50%"><stop offset="0" stop-color="#2B2316"></stop><stop offset="1" stop-color="#08090B" stop-opacity="0"></stop></radialGradient></defs>
+    <rect width="1440" height="900" fill="url(#ng)"></rect>
+    <path d="M300 900 L322 260 L370 210 L418 260 L440 900 Z" fill="#141518"></path>
+    <path d="M322 260 L370 210 L418 260" stroke="#E5D2A0" stroke-width="1" fill="none"></path>
+    <path d="M370 210 V900" stroke="#C6A667" stroke-width="0.6" opacity="0.4"></path>
+    <path d="M308 760 H432" stroke="#C6A667" stroke-width="1.2"></path>
+  </svg>
+  <div style="grid-column: 1 / span 6; position: relative; display: flex; flex-direction: column; justify-content: center; gap: 36px;">
+    <div style="display: flex; align-items: center; gap: 16px; font-size: 12px; letter-spacing: 0.32em; color: #C6A667;">
+      <span style="width: 40px; height: 1px; background: #C6A667; display: block;"></span>YOUR INVITATION
+    </div>
+    <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 78px; line-height: 1;">Some addresses<br>are destined<br><span style="font-style: italic; color: #E5D2A0;">to become icons.</span></h2>
+    <p style="margin: 0; font-size: 12px; letter-spacing: 0.32em; color: #9B9B9B;">THE SUMMIT — BY VINAAYAK REALTY</p>
+  </div>
+  <form style="grid-column: 8 / span 5; position: relative; align-self: center; display: flex; flex-direction: column; gap: 22px; background: rgba(20,22,25,0.85); border: 1px solid rgba(198,166,103,0.3); padding: 44px;">
+    <h3 style="margin: 0 0 4px; font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 36px;">The future has an address.</h3>
+    <label style="display: flex; flex-direction: column; gap: 8px; font-size: 11px; letter-spacing: 0.22em; color: #A9A9A9;">FULL NAME<input type="text" style="background: transparent; border: none; border-bottom: 1px solid #4A4A4A; color: #F5F2EA; font: inherit; font-size: 16px; letter-spacing: 0; padding: 8px 0;"></label>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px;">
+      <label style="display: flex; flex-direction: column; gap: 8px; font-size: 11px; letter-spacing: 0.22em; color: #A9A9A9;">PHONE<input type="tel" style="background: transparent; border: none; border-bottom: 1px solid #4A4A4A; color: #F5F2EA; font: inherit; font-size: 16px; letter-spacing: 0; padding: 8px 0;"></label>
+      <label style="display: flex; flex-direction: column; gap: 8px; font-size: 11px; letter-spacing: 0.22em; color: #A9A9A9;">EMAIL<input type="email" style="background: transparent; border: none; border-bottom: 1px solid #4A4A4A; color: #F5F2EA; font: inherit; font-size: 16px; letter-spacing: 0; padding: 8px 0;"></label>
+    </div>
+    <fieldset style="border: none; margin: 0; padding: 0; display: flex; gap: 10px; flex-wrap: wrap;">
+      <legend style="font-size: 11px; letter-spacing: 0.22em; color: #A9A9A9; margin-bottom: 10px;">INTERESTED IN</legend>
+      <button type="button" style="background: #C6A667; color: #08090B; border: 1px solid #C6A667; font: inherit; font-size: 12px; letter-spacing: 0.16em; padding: 12px 18px;">RESIDENTIAL</button>
+      <button type="button" style="background: transparent; color: #F5F2EA; border: 1px solid #4A4A4A; font: inherit; font-size: 12px; letter-spacing: 0.16em; padding: 12px 18px;">COMMERCIAL</button>
+      <button type="button" style="background: transparent; color: #F5F2EA; border: 1px solid #4A4A4A; font: inherit; font-size: 12px; letter-spacing: 0.16em; padding: 12px 18px;">GENERAL</button>
+    </fieldset>
+    <label style="display: flex; gap: 12px; align-items: flex-start; font-size: 12px; line-height: 1.6; color: #A9A9A9;"><input type="checkbox" style="margin-top: 3px; accent-color: #C6A667;">I agree to be contacted about The Summit. My details will be used only for this enquiry.</label>
+    <button type="submit" style="background: transparent; color: #C6A667; border: 1px solid #C6A667; font: inherit; font-size: 12px; font-weight: 600; letter-spacing: 0.22em; padding: 18px; cursor: pointer;">REQUEST A PRIVATE CONSULTATION ↗</button>
+  </form>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

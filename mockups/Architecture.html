@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Summit — Architecture</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#C6A667}a:hover{color:#E5D2A0}
+</style>
+</helmet>
+<div style="width: 1440px; height: 900px; box-sizing: border-box; padding: 0 64px; background: #141619; color: #F5F2EA; font-family: Manrope, sans-serif; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; overflow: hidden;">
+  <div style="grid-column: 1 / span 5; position: relative; background: #0E0F12;">
+    <svg aria-hidden="true" width="100%" height="900" viewBox="0 0 540 900" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0;">
+      <defs><linearGradient id="tw" x1="0" x2="1"><stop offset="0" stop-color="#1D1F23"></stop><stop offset="1" stop-color="#101114"></stop></linearGradient></defs>
+      <path d="M170 900 L200 120 L270 60 L340 120 L370 900 Z" fill="url(#tw)"></path>
+      <path d="M200 120 L270 60 L340 120" stroke="#E5D2A0" stroke-width="1.2" fill="none"></path>
+      <g stroke="#9B9B9B" stroke-width="0.5" opacity="0.35"><path d="M196 220 H344"></path><path d="M192 320 H348"></path><path d="M188 420 H352"></path><path d="M184 520 H356"></path><path d="M181 600 H359"></path></g>
+      <g fill="#E5D2A0" opacity="0.5"><rect x="215" y="260" width="30" height="3"></rect><rect x="290" y="360" width="24" height="3"></rect><rect x="210" y="460" width="40" height="3"></rect><rect x="280" y="560" width="30" height="3"></rect></g>
+      <rect x="178" y="690" width="184" height="210" fill="#C6A667" opacity="0.14"></rect>
+      <path d="M160 690 H380" stroke="#C6A667" stroke-width="1.5"></path>
+      <g stroke="#C6A667" opacity="0.5"><path d="M176 760 H364"></path><path d="M174 830 H366"></path></g>
+      <text x="392" y="400" fill="#9B9B9B" font-family="Manrope" font-size="11" letter-spacing="3">RESIDENCES</text>
+      <path d="M384 140 V680" stroke="#9B9B9B" stroke-width="0.6" opacity="0.6"></path>
+      <text x="392" y="800" fill="#C6A667" font-family="Manrope" font-size="11" letter-spacing="3">G + 2 COMMERCIAL</text>
+      <path d="M384 696 V900" stroke="#C6A667" stroke-width="0.8"></path>
+    </svg>
+    <span style="position: absolute; left: 24px; top: 32px; font-size: 11px; letter-spacing: 0.24em; color: #9B9B9B;">CONCEPTUAL SECTION</span>
+  </div>
+  <div style="grid-column: 7 / span 6; display: flex; flex-direction: column; justify-content: center; gap: 56px;">
+    <div style="display: flex; flex-direction: column; gap: 24px;">
+      <div style="display: flex; align-items: center; gap: 16px; font-size: 12px; letter-spacing: 0.32em; color: #C6A667;">
+        <span style="width: 40px; height: 1px; background: #C6A667; display: block;"></span>THE ARCHITECTURAL VISION
+      </div>
+      <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 96px; line-height: 0.95;">Designed to<br><span style="font-style: italic; color: #E5D2A0;">rise above.</span></h2>
+    </div>
+    <div style="display: flex; flex-direction: column;">
+      <div style="display: grid; grid-template-columns: 80px minmax(0, 1fr); column-gap: 24px; border-top: 1px solid rgba(198,166,103,0.45); padding: 32px 0;">
+        <span style="font-family: 'Cormorant Garamond', serif; font-size: 40px; color: #C6A667; line-height: 1;">01</span>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <h3 style="margin: 0; font-size: 14px; font-weight: 500; letter-spacing: 0.24em;">COMMERCIAL EXCELLENCE</h3>
+          <span style="font-size: 12px; letter-spacing: 0.18em; color: #C6A667;">GROUND, FIRST &amp; SECOND FLOORS</span>
+          <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.75; color: #A9A9A9; max-width: 480px;">A thoughtfully envisioned destination for premium retail, dining and commercial experiences.</p>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: 80px minmax(0, 1fr); column-gap: 24px; border-top: 1px solid rgba(198,166,103,0.45); border-bottom: 1px solid rgba(198,166,103,0.45); padding: 32px 0;">
+        <span style="font-family: 'Cormorant Garamond', serif; font-size: 40px; color: #C6A667; line-height: 1;">02</span>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <h3 style="margin: 0; font-size: 14px; font-weight: 500; letter-spacing: 0.24em;">ELEVATED RESIDENCES</h3>
+          <span style="font-size: 12px; letter-spacing: 0.18em; color: #C6A667;">UPPER RESIDENTIAL FLOORS</span>
+          <p style="margin: 4px 0 0; font-size: 15px; line-height: 1.75; color: #A9A9A9; max-width: 480px;">An exclusive residential environment designed around privacy, comfort and elevated perspectives.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

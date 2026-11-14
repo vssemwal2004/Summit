@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Summit — Mockups</title>
+<style>
+body{margin:0;background:#1b1b1d;color:#ccc;font-family:system-ui,sans-serif}
+h1{font-weight:400;font-size:16px;letter-spacing:.1em;padding:24px 32px 0;margin:0}
+.s{padding:16px 32px 32px}
+.s p{margin:0 0 10px;font-size:13px;letter-spacing:.08em;color:#C6A667}
+.frame{width:100%;max-width:1440px;aspect-ratio:1440/900;overflow:hidden;position:relative}
+iframe{border:0;width:1440px;height:900px;transform-origin:0 0;position:absolute;top:0;left:0}
+</style>
+</head>
+<body>
+<h1>THE SUMMIT — 5 MOCKUP SCREENS (conceptual)</h1>
+<div class="s"><p>01 · HERO — OBSIDIAN</p><div class="frame"><iframe src="Main.html" title="Hero"></iframe></div></div>
+<div class="s"><p>02 · INTRODUCTION — IVORY</p><div class="frame"><iframe src="Intro.html" title="Introduction"></iframe></div></div>
+<div class="s"><p>03 · ARCHITECTURE — CHARCOAL</p><div class="frame"><iframe src="Architecture.html" title="Architecture"></iframe></div></div>
+<div class="s"><p>04 · RESIDENCES + AMENITIES</p><div class="frame"><iframe src="Residences.html" title="Residences"></iframe></div></div>
+<div class="s"><p>05 · CLOSING + ENQUIRY</p><div class="frame"><iframe src="Closing.html" title="Closing"></iframe></div></div>
+<script>
+function fit(){document.querySelectorAll('.frame').forEach(function(f){f.querySelector('iframe').style.transform='scale('+(f.clientWidth/1440)+')'})}
+addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
